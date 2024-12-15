@@ -5,26 +5,44 @@
     <style>
         li {
             list-style-type: none;
-            color: beige;
         }
 
         body {
+            background-color: yellow;
+            color: black;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        ul {
+            display: flex;
+            padding-left: 0px;
+            margin-top: 0;
+        }
+
+        nav {
             background-color: black;
-            color: blue;
+            color: whitesmoke;
         }
 
-        .pazymeti {
-            color: blueviolet;
+        .nav-link {
+            color: aliceblue;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
         }
 
-        #zana {
-            font-size: 50px;
+        .aktyvus {
+            background-color: coral;
         }
 
-        .pazymeti {
-            border-style: dotted;
-            border-color: aqua;
-            border-width: 2px;
+        .nav-link:hover {
+            background-color: mintcream;
+        }
+
+        main {
+            margin-left: 5px;
         }
     </style>
     <title>Marko šeimos aprašymas</title>
@@ -33,18 +51,19 @@
 <body>
     <nav>
         <ul>
-            <li>Pradžia</li>
-            <li><a href="markas.html">Markas</a></li>
-            <li class="pazymeti"> Emilija</li>
-            <li class="pazymeti">Gabija</li>
-            <li id="zana">Mama</li>
-            <li>Tetis</li>
+            <li><a class="nav-link aktyvus" href="index.html">Pradžia</a></li>
+            <li><a class="nav-link" href="markas.html">Markas</a></li>
+            <li><a class="nav-link" href="emilija.html"> Emilija</a></li>
+            <li><a class="nav-link" href="gabija.html">Gabija</a></li>
+            <li><a class="nav-link" href="mama.html">Mama</a></li>
+            <li><a class="nav-link" href="tetis.html">Tetis</a></li>
         </ul>
     </nav>
-    <h1>Sveiki atvyke i Marko seima</h1>
+    <main>
+        <h1>Sveiki atvyke i Marko seima</h1>
 
-    <p>šiame puslapyje aš aprašysiu savo šeima</p>
-
+        <p>šiame puslapyje aš aprašysiu savo šeima</p>
+    </main>
 </body>
 
 </html>
