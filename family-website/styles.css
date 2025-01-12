@@ -53,4 +53,28 @@ main {
     padding: 10px;
     border-radius: 10px;
     text-align: left;
+
+}
+
+.section2-text>p {
+    margin-top: 4px;
+}
+
+.section2-text>h1 {
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+.more-button {
+    text-decoration: none;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    border: 2px solid black;
+    transition: color 1s;
+}
+
+.more-button:hover {
+    color: azure;
 }
