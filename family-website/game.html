@@ -6,12 +6,17 @@
     <title>Marko šeimos aprašymas</title>
     <script>
         let vardas = prompt("koks tavo vardas")
-        if (vardas.toUpperCase() == "MARKAS") {
-            console.log("Einam i lauka")
-        } else {
-            console.log("labas " + vardas + "!")
-        }
 
+        let kreipinys = vardas
+        if (vardas.endsWith("is")) {
+            kreipinys = vardas.substring(0, vardas.length - 1)
+        }
+        console.log("labas " + kreipinys + "!")
+        //         emilija zana zita ->a
+        //         irmante-> e
+        //         markas martynas  ->ai
+        //         vitalijus->au
+        // kestutis-> i
     </script>
 </head>
 
