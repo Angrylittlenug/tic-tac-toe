@@ -4,23 +4,34 @@
 <head>
     <link href="styles.css" rel="stylesheet" />
     <title>Marko šeimos aprašymas</title>
+    <script>
+        let vardas = prompt("koks tavo vardas")
+        if (vardas.toUpperCase() == "MARKAS") {
+            console.log("Einam i lauka")
+        } else {
+            console.log("labas " + vardas + "!")
+        }
+
+    </script>
 </head>
 
 <body>
     <nav>
         <ul>
             <li><a class="nav-link" href="index.html">Pradžia</a></li>
-            <li><a class="nav-link aktyvus" href="markas.html">Markas</a></li>
+            <li><a class="nav-link" href="markas.html">Markas</a></li>
             <li><a class="nav-link" href="emilija.html"> Emilija</a></li>
             <li><a class="nav-link" href="gabija.html">Gabija</a></li>
             <li><a class="nav-link" href="mama.html">Mama</a></li>
             <li><a class="nav-link" href="tetis.html">Tetis</a></li>
-            <li><a class="nav-link" href="game.html">zaidimas</a></li>
+            <li><a class="nav-link aktyvus" href="game.html">zaidimas</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Cia yra marko puslapis</h1>
     </main>
+    <footer>
+        <p>sukure markas zakardonskis</p>
+    </footer>
 </body>
 
 </html>
