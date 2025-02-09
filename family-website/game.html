@@ -5,13 +5,25 @@
     <link href="styles.css" rel="stylesheet" />
     <title>Marko šeimos aprašymas</title>
     <script>
-        let vardas = prompt("koks tavo vardas")
 
-        let kreipinys = vardas
-        if (vardas.endsWith("is")) {
-            kreipinys = vardas.substring(0, vardas.length - 1)
+        function kurkKreipini(vardas) {
+            let kreipinys = vardas
+            if (vardas.endsWith("is")) {
+                kreipinys = vardas.substring(0, vardas.length - 1)
+            } else if (vardas.endsWith("ė")) {
+                kreipinys = vardas.substring(0, vardas.length - 1) + "e"
+            } else if (vardas.endsWith("as")) {
+                kreipinys = vardas.substring(0, vardas.length - 1) + "i"
+            } else if (vardas.endsWith("us")) {
+                kreipinys = vardas.substring(0, vardas.length - 2) + "au"
+            }
+            return kreipinys
         }
-        console.log("labas " + kreipinys + "!")
+
+        let pirmasVardas = prompt("koks pirmo zaidejo vardas")
+        let antrasVardas = prompt("koks antro zaidejo vardas")
+
+        console.log("labas " + kurkKreipini(pirmasVardas) + " ir " + kurkKreipini(antrasVardas) + "!")
         //         emilija zana zita ->a
         //         irmante-> e
         //         markas martynas  ->ai
