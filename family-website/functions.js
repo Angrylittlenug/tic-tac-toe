@@ -13,7 +13,15 @@
  * ------------------------------------
  */
 function playGame(action) {
-    return "nezinau"
+    if (action.toLowerCase() == "lapas") {
+        return "zirkles"
+    }
+    if (action.toLowerCase() == "zirkles") {
+        return "akmuo"
+    }
+    if (action.toLowerCase() == "akmuo") {
+        return "lapas"
+    }
 }
 
 /**
