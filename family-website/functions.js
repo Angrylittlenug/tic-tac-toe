@@ -32,15 +32,18 @@ function playGame(action) {
  * -------------------------------------------------
  * | numPeople | numCandies | funkcijos rezultatas |
  * -------------------------------------------------
- * |        14 |          7 |                    2 |
+ * |        14 |          7 |                    0 |
  * |         5 |          3 |                    0 |
  * |         3 |          7 |                    2 |
  * ... ir taip toliau
  * --------------------------------
  */
 function calculateCandy(numPeople, numCandies) {
-    return 999
+    return numCandies / numPeople(Math.floor)
+
+
 }
+
 
 /**
  * TREČIAS UŽRAKTAS
