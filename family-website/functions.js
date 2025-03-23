@@ -39,8 +39,11 @@ function playGame(action) {
  * --------------------------------
  */
 function calculateCandy(numPeople, numCandies) {
-    return numCandies / numPeople(Math.floor)
-
+    if (numPeople == 0) {
+        return 0
+    } else {
+        return Math.floor(numCandies / numPeople)
+    }
 
 }
 
