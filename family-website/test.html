@@ -9,10 +9,30 @@
         // console.log(suma)
         let skaicius = parseInt(prompt("parasyk skaiciu"))
         let i = 0
-        while (i < skaicius) {
+        let suma = 0
+        while (i < skaicius || i == skaicius) {
             console.log("i: " + i)
+            suma = suma + i
             i = i + 1
+
+
         }
+        console.log(suma)
+        // i | suma | skaicius
+        // 0 | 0 | 4
+        // 1 | 1 | 4
+        // 2 | 3 | 4
+        // 3 | 6 | 4
+        // 4 | 10 | 4
+        // 5 | 15 | 4
+
+        // i | suma | skaicius
+        // 0 | 0 | 4
+        // 1 | 0 | 4
+        // 2 | 1 | 4
+        // 3 | 3 | 4
+        // 4 | 6 | 4
+        // 5 | 10 | 4
     </script>
 </head>
 
