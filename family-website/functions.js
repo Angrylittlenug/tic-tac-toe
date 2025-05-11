@@ -64,5 +64,16 @@ function calculateCandy(numPeople, numCandies) {
  * --------------------------------
 */
 function getNextInSeries(index) {
-    return 999
+    if (index == 0) {
+        return 1
+    } if (index == 1) {
+        return 2
+    }
+    let current = 2
+    let last = 1
+    let i = 2
+    while (i < 10) {
+        i = i + 1
+        let next = current + last
+    }
 }
